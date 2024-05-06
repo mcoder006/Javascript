@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Web Camera Access</title>
 </head>
 <body>
-    <div>
-        
+    <div class="flex flex-col justify-center items-center h-screen w-screen bg-black text-white gap-3 uppercase text-xl md:text-2xl">
+        <h1>WebCam video</h1>
+        <video id="video" class="md:h-[700px] h-[350px] w-[70vw] bg-slate-400 rounded" autoplay>
+        </video>
+        <div>
+            <button class="bg-green-500 p-2 px-3 rounded-lg" id="startVideo">Start WebCam</button>
+            <button class="bg-green-500 p-2 px-3 rounded-lg" id="stopVideo">Stop WebCam</button>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
